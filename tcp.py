@@ -8,7 +8,7 @@ def main():
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
  
     # 绑定本地信息，若不绑定，系统会自动分配
-    bind_addr = ('', 18899)
+    bind_addr = ('', 8000)
     udp_socket.bind(bind_addr) # ip和port，ip一般不用写，表示本机的任何一个ip
  
     while True:
