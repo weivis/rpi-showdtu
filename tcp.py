@@ -36,7 +36,7 @@ sock.listen(5)
 while True: 
     connection,address = sock.accept()
     print ('IP Address：'+ str(address))
-    print(connection)
+    print(connection.recv(1024))
     try: 
         connection.settimeout(10) 
         buf = connection.recv(1024)
