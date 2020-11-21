@@ -42,6 +42,7 @@ while True:
         buf = connection.recv(1024)
         print(buf.decode())
         
-    except socket.timeout: 
-        print ('time out')
+    except Exception as e:
+        print("Error:"e) 
+        # print ('time out')
     connection.close() 
