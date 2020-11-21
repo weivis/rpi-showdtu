@@ -38,11 +38,11 @@ while True:
     print ('IP Address：'+ str(address))
     # print(connection.recv(1024))
     try: 
-        connection.settimeout(10) 
+        connection.settimeout(10)
         buf = connection.recv(1024)
         print(buf.decode())
         
     except Exception as e:
         print("Error:", e)
         # print ('time out')
-    connection.close() 
+    # connection.close()
