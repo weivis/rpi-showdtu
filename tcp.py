@@ -43,6 +43,6 @@ while True:
         print(buf.decode())
         
     except Exception as e:
-        print("Error:"e) 
+        print("Error:", e)
         # print ('time out')
     connection.close() 
