@@ -7,13 +7,13 @@ class MainHandler(tornado.web.RequestHandler):
         print("Time:",datetime.datetime.now())
         print(self.request.body)
         print(self.request)
-        self.write("Hello, world, GET")
+        self.write("01 03 00 00 00 02 c4 0b")
 
     def post(self):
         print("Time:",datetime.datetime.now())
         print(self.request.body)
         print(self.request)
-        self.write("Hello, world, POST")
+        self.write("01 03 00 00 00 02 c4 0b")
 
 def make_app():
     return tornado.web.Application([
@@ -24,3 +24,5 @@ if __name__ == "__main__":
     app = make_app()
     app.listen(8000)
     tornado.ioloop.IOLoop.current().start()
+
+    
